@@ -1,6 +1,6 @@
 # Vue.js FastAPI TypeScript Project Template
 
-This is a simple project template for a Vue.js and FastAPI project, set up to be a monorepo. It is intended for fast prototyping of web apps that use LLMs.
+This is a simple project template for a Vue.js (TypeScript) and FastAPI project, set up to be a monorepo. It is intended for fast prototyping of web apps that use LLMs.
 
 > [!IMPORTANT]
 > This project is opinionated and uses OpenRouter's API instead of OpenAI's. However, because the OpenRouter API is compatible with the OpenAI API, we're able to use the OpenAI Python SDK with it.
@@ -36,9 +36,6 @@ The frontend is a Vue.js application that provides the user interface/ It's loca
 - [Tailwind CSS](https://tailwindcss.com/)
 - [shadcn-vue](https://www.shadcn-vue.com/)
 - [GSAP](https://gsap.com/)
-
-> [!NOTE]
-> This is set up to use Javascript, not Typescript.
 
 > [!IMPORTANT]
 > Because this project template is intended for prototyping, it uses [shadcn-vue](https://www.shadcn-vue.com/) for the UI components so that we can quickly put together UI / UX. Shadcn-vue isn't a package, so you need to install components individually via the command line. Be sure to view their docs for more information. But ultimately, installation of components is very easy, usually with a command that looks like `npx shadcn-vue@latest add [component]`.
