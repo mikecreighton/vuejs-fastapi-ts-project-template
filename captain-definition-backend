@@ -6,7 +6,7 @@
     "COPY ./backend/requirements.txt ./",
     "RUN pip install -r requirements.txt",
     "COPY ./backend ./",
-    "EXPOSE 8000",
-    "CMD [\"gunicorn\", \"main:app\", \"--workers\", \"1\", \"--worker-class\", \"uvicorn.workers.UvicornWorker\", \"--timeout\", \"120\", \"--bind\", \"0.0.0.0:8000\"]"
+    "EXPOSE 8080",
+    "CMD [\"gunicorn\", \"src.main:app\", \"--workers\", \"4\", \"--worker-class\", \"uvicorn.workers.UvicornWorker\", \"--timeout\", \"300\", \"--bind\", \"0.0.0.0:8080\"]"
   ]
 }
